@@ -1,15 +1,15 @@
 #%%
-# Recursive Python program for level 
-# order traversal of Binary Tree
+# Recursive Python program for Breadth First traversal of Binary Tree
  
 # A node structure
 class Node:
  
     # A utility function to create a new node
     def __init__(self, key):
-        self.data = key 
+         
         self.left = None
         self.right = None
+        self.data = key
  
  
 # Function to  print level order traversal of tree
