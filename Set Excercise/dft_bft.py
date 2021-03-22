@@ -1,4 +1,6 @@
 # %%
+import unittest
+
 tree = {
     "node": 1,
     "sub-nodes": [
@@ -46,6 +48,8 @@ tree = {
 
 # Depth first traveral which visits the node first
 print("Depth First Traversal:")
+
+
 def dft(node):
 
     print(node["node"])
@@ -57,7 +61,9 @@ def dft(node):
 
 dft(tree)
 
-# Breadth first traversal which 
+# Breadth first traversal which
+
+
 def searchByBft(orderLine):
 
     if(len(orderLine) > 0):
@@ -69,7 +75,7 @@ def searchByBft(orderLine):
                 for item in value:
                     orderLine.append(item)
             else:
-             
+
                 print("Node:" + str(value))
 
         searchByBft(orderLine)
@@ -77,4 +83,14 @@ def searchByBft(orderLine):
 
 print("\nBreadth First Traversal:")
 searchByBft([tree])
+
+# class TestNode(unittest.TestCase):
+
+# def test_node(self):
+
+# def test_sum_tuple(self):
+#self.assertEqual(sum((1, 2, 2)), 6, "Should be 6")
+
+# if __name__ == '__main__':
+# unittest.main()
 # %%
